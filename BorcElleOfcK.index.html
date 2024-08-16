@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BorcElle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 24px;
+        }
+
+        .cta-button {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .produtos, .promocoes, .sobre, .contato {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .produto-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .produto-item, .promo-item {
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .produto-item img, .promo-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">BorcElle</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à BorcElle</h1>
+            <p>Onde a tecnologia encontra a inovação em vendas!</p>
+            <a href="#produtos" class="cta-button">Explore Nossos Produtos</a>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produto-grid">
+            <div class="produto-item">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>R$ 100,00</p>
+            </div>
+            <div class="produto-item">
+                <img src="produto2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>R$ 150,00</p>
+            </div>
+            <div class="produto-item">
+                <img src="produto3.jpg" alt="Produto 3">
+                <h3>Produto 3</h3>
+                <p>R$ 200,00</p>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Seção de Promoções -->
+    <section id="promocoes" class="promocoes">
+        <h2>Ofertas Especiais</h2>
+        <div class="promo-carousel">
+            <div class="promo-item">
+                <img src="promo1.jpg" alt="Promoção 1">
+                <p>Desconto de 20% em produtos selecionados!</p>
+            </div>
+            <div class="promo-item">
+                <img src="promo2.jpg" alt="Promoção 2">
+                <p>Compre 1, leve 2 em acessórios!</p>
+            </div>
+            <!-- Adicione mais promoções conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre a BorcElle</h2>
+        <p>A BorcElle é uma loja inovadora que combina a tecnologia com a experiência de compra online. Nosso objetivo é oferecer produtos de alta qualidade com as melhores ofertas do mercado.</p>
+        <img src="sobre.jpg" alt="Sobre a BorcElle">
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato">
+        <h2>Quer comprar ou vender? Entre aqui!</h2>
+        <p>Entre em contato conosco pelo nosso Discord: <a href="https://discord.gg/ujMcSNzFwT" target="_blank">https://discord.gg/ujMcSNzFwT</a></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 BorcElle. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
